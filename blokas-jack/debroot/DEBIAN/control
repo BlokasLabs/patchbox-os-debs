@@ -1,0 +1,10 @@
+Section: audio
+Priority: optional
+Homepage: https://blokas.io/
+Standards-Version: 3.9.2
+Package: blokas-jack
+Version: 1.0.0-0
+Architecture: all
+Maintainer: Blokas Labs <hello@blokas.io>
+Depends: adduser (>= 3.0), jackd2 (>= 1.9.12~)
+Description: Configures the Jack backend to be shared between users.

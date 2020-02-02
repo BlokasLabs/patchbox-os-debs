@@ -1,0 +1,4 @@
+adduser --no-create-home --system --group jack
+adduser jack audio
+echo "JACK_PROMISCUOUS_SERVER=jack" >> /etc/environment
+systemctl --system daemon-reload > /dev/null || true
