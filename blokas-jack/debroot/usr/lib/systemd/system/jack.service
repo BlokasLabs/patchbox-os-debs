@@ -3,7 +3,7 @@ Description=JACK Server
 After=sound.target
 
 [Service]
-LimitRTPRIO=infinity
+LimitRTPRIO=95
 LimitMEMLOCK=infinity
 Environment=JACK_NO_AUDIO_RESERVATION=1
 Environment=JACK_PROMISCUOUS_SERVER=jack
