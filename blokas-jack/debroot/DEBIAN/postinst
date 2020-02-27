@@ -1,4 +1,35 @@
-adduser --no-create-home --system --group jack
-adduser jack audio
+if ! id -u jack > /dev/null 2>&1; then
+	adduser --no-create-home --system --group jack
+	adduser jack audio --quiet
+fi
+
+GROUP_MEMBERSHIP_CHANGED=false
+
+if id -u pi > /dev/null 2>&1; then
+	if ! groups pi 2>/dev/null | grep -q jack; then
+		adduser pi jack --quiet
+		GROUP_MEMBERSHIP_CHANGED=true
+	fi
+fi
+
+if id -u patch > /dev/null 2>&1; then
+	if ! groups patch 2>/dev/null | grep -q jack; then
+	        adduser patch jack --quiet
+		GROUP_MEMBERSHIP_CHANGED=true
+	fi
+fi
+
 echo "JACK_PROMISCUOUS_SERVER=jack" >> /etc/environment
 systemctl --system daemon-reload > /dev/null || true
+
+if $GROUP_MEMBERSHIP_CHANGED; then
+	echo
+	echo "Important! As your group membership changed, you must log out and log back in once for Jack applications to start working."
+	echo
+fi
+
+if ! id -u pi > /dev/null 2>&1 && ! id -u patch > /dev/null 2>&1; then
+	echo
+	echo "Important! Add your own user to group 'jack' (run: 'sudo adduser your_user jack'), log out and log back in!"
+	echo
+fi
