@@ -1,0 +1,64 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: touchosc2midi
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     CHANGELOG.txt
+           MANIFEST.in
+           README.md
+           build/lib/touchosc2midi/__init__.py
+           build/lib/touchosc2midi/advertise.py
+           build/lib/touchosc2midi/touchosc2midi.py
+           dev-requirements.txt
+           dist/touchosc2midi-0.0.10-py3.7.egg
+           docker/Dockerfile
+           requirements.txt
+           setup.py
+           touchosc2midi.egg-info/PKG-INFO
+           touchosc2midi.egg-info/SOURCES.txt
+           touchosc2midi.egg-info/dependency_links.txt
+           touchosc2midi.egg-info/entry_points.txt
+           touchosc2midi.egg-info/requires.txt
+           touchosc2midi.egg-info/top_level.txt
+           touchosc2midi/__init__.py
+           touchosc2midi/__pycache__/__init__.cpython-37.pyc
+           touchosc2midi/advertise.py
+           touchosc2midi/touchosc2midi.py
+           tox.ini
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     build/lib/touchosc2midi/configuration.py
+           touchosc2midi/configuration.py
+Copyright: 2015 velolala <fiets@einstueckheilewelt.de>
+License:   __NO_LICENSE__
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE
+ The MIT License (MIT)
+ .
+ Copyright (c) 2015 velolala
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+ .

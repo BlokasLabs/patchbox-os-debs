@@ -1,0 +1,14 @@
+Source: touchosc2midi
+Section: sound
+Priority: optional
+Maintainer: Blokas <hello@blokas.io>
+Build-Depends: debhelper (>=11~), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.1.4
+Homepage: https://github.com/BlokasLabs/touchosc2midi
+X-Python3-Version: >= 3.2
+
+Package: touchosc2midi
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: TouchOSC 2 MIDI bridge, see https://github.com/velolala/touchosc2midi for more details.

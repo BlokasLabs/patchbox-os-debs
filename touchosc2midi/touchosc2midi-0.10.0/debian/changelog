@@ -1,0 +1,5 @@
+touchosc2midi (0.10.0-1) buster; urgency=low
+
+  * Initial release.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Mon, 02 Mar 2020 22:41:21 +0000
