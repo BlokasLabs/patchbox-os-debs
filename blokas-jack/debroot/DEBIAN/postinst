@@ -19,6 +19,8 @@ if id -u patch > /dev/null 2>&1; then
 	fi
 fi
 
+adduser root jack --quiet
+
 echo "JACK_PROMISCUOUS_SERVER=jack" >> /etc/environment
 systemctl --system daemon-reload > /dev/null || true
 
