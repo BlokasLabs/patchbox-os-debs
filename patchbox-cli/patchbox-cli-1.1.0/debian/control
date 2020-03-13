@@ -1,0 +1,14 @@
+Source: patchbox-cli
+Section: utils
+Priority: optional
+Maintainer: Blokas <hello@blokas.io>
+Build-Depends: debhelper (>=11~), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.1.4
+Homepage: https://blokas.io/
+X-Python3-Version: >= 3.2
+
+Package: patchbox-cli
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Patchbox OS configuration utility

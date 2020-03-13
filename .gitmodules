@@ -1,3 +1,6 @@
 [submodule "touchosc2midi/src"]
 	path = touchosc2midi/src
 	url = https://github.com/BlokasLabs/touchosc2midi
+[submodule "patchbox-cli/src"]
+	path = patchbox-cli/src
+	url = https://github.com/BlokasLabs/patchbox-cli.git

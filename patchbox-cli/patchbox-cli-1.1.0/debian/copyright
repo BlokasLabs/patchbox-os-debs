@@ -1,0 +1,47 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: patchbox-cli
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     README
+           patchbox/__init__.py
+           patchbox/cli.py
+           patchbox/environment.py
+           patchbox/module.py
+           patchbox/modules/__init__.py
+           patchbox/modules/bluetooth/__init__.py
+           patchbox/modules/bluetooth/cli.py
+           patchbox/modules/boot/__init__.py
+           patchbox/modules/boot/cli.py
+           patchbox/modules/boot/scripts/set_boot_to_console.sh
+           patchbox/modules/boot/scripts/set_boot_to_desktop.sh
+           patchbox/modules/button/__init__.py
+           patchbox/modules/button/cli.py
+           patchbox/modules/info/__init__.py
+           patchbox/modules/info/cli.py
+           patchbox/modules/jack/__init__.py
+           patchbox/modules/jack/cli.py
+           patchbox/modules/module/__init__.py
+           patchbox/modules/module/cli.py
+           patchbox/modules/password/__init__.py
+           patchbox/modules/password/cli.py
+           patchbox/modules/update/__init__.py
+           patchbox/modules/update/cli.py
+           patchbox/modules/update/scripts/update.sh
+           patchbox/modules/wifi/__init__.py
+           patchbox/modules/wifi/cli.py
+           patchbox/modules/wizard/__init__.py
+           patchbox/modules/wizard/cli.py
+           patchbox/service.py
+           patchbox/settings.py
+           patchbox/state.py
+           patchbox/utils.py
+           patchbox/views.py
+           setup.py
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
