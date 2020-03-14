@@ -1,0 +1,11 @@
+[Unit]
+Description=TouchOsc2Midi service
+After=network-online.target
+Wants=network-online.target
+BindsTo=network-online.target
+
+[Service]
+ExecStart=/usr/bin/touchosc2midi
+
+[Install]
+WantedBy=multi-user.target
