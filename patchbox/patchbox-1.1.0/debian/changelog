@@ -1,0 +1,5 @@
+patchbox (1.1.0-1) buster; urgency=low
+
+  * Initial release.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Wed, 14 Mar 2020 10:05:24 +0000

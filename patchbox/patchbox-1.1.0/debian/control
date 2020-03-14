@@ -1,0 +1,13 @@
+Source: patchbox
+Section: utils
+Priority: optional
+Maintainer: Blokas <hello@blokas.io>
+Build-Depends: debhelper (>=11~)
+Standards-Version: 4.1.4
+Homepage: https://blokas.io/
+
+Package: patchbox
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}, patchbox-cli (>= 1.1.0-1)
+Description: Patchbox meta package

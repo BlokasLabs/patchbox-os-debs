@@ -4,3 +4,7 @@
 
 %:
 	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_installsystemd:
+	cp $(CURDIR)/patchbox-init.service $(CURDIR)/debian/patchbox-cli.service
+	dh_installsystemd --name=patchbox-init
