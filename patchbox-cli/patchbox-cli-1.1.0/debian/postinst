@@ -1,0 +1,15 @@
+#!/bin/sh
+
+install_repo() {
+	if [ ! -d "$3" ]; then
+		echo "Cloning $1 repository from $2..."
+		git clone "$2" "$3"
+	else
+		echo "Updating $1 repository with latest stuff in $2..."
+		cd $3 && git -c user.name="apt-get" -c user.email="apt@get" stash && git pull
+	fi
+}
+
+install_repo patchbox-modules https://github.com/BlokasLabs/patchbox-modules /usr/local/patchbox-modules
+
+#DEBHELPER#
