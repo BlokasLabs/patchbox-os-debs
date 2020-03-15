@@ -12,4 +12,6 @@ install_repo() {
 
 install_repo patchbox-modules https://github.com/BlokasLabs/patchbox-modules /usr/local/patchbox-modules
 
+cp /usr/share/patchbox-cli/motd /etc/motd
+
 #DEBHELPER#

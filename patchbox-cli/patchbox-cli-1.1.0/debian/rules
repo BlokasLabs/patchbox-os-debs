@@ -10,5 +10,5 @@ override_dh_installsystemd:
 	dh_installsystemd --name=patchbox-init
 
 override_dh_install:
-	dh_install debian/motd /etc
+	dh_install debian/motd /usr/share/patchbox-cli/
 	dh_install
