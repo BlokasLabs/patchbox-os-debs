@@ -1,0 +1,17 @@
+patchbox-cli (1.1.1-1) buster; urgency=low
+
+  * Accept http, https and git URLs for patchbox module install.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Wed, 01 Apr 2020 15:31:37 +0100
+
+patchbox-cli (1.1.0-2) buster; urgency=low
+
+  * Added autologin options to boot menu.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Tue, 24 Mar 2020 14:39:42 +0000
+
+patchbox-cli (1.1.0-1) buster; urgency=low
+
+  * Initial release.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Fri, 13 Mar 2020 15:55:14 +0000

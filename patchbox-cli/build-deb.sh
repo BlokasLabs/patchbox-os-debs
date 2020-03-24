@@ -5,7 +5,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=patchbox-cli
-VERSION=1.1.0
+VERSION=1.1.1
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 

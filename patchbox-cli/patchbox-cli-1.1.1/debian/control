@@ -10,5 +10,5 @@ X-Python3-Version: >= 3.2
 Package: patchbox-cli
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${python3:Depends}
+Depends: ${misc:Depends}, ${python3:Depends}, git (>= 1:2.15.1)
 Description: Patchbox OS configuration utility
