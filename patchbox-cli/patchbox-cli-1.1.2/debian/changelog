@@ -1,3 +1,9 @@
+patchbox-cli (1.1.2-1) buster; urgency=low
+
+  * Fixed module menu.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Fri, 03 Apr 2020 10:56:45 +0100
+
 patchbox-cli (1.1.1-1) buster; urgency=low
 
   * Accept http, https and git URLs for patchbox module install.
