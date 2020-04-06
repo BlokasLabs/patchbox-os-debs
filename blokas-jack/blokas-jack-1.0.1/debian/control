@@ -1,0 +1,13 @@
+Source: blokas-jack
+Section: sound
+Priority: optional
+Maintainer: Blokas Labs <hello@blokas.io>
+Build-Depends: debhelper (>=11~)
+Standards-Version: 4.1.4
+Homepage: https://blokas.io
+
+Package: blokas-jack
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}, adduser (>= 3.0), jackd2 (>= 1.9.12~)
+Description: Configures the Jack backend to be shared between users.

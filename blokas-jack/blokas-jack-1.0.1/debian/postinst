@@ -14,7 +14,7 @@ fi
 
 if id -u patch > /dev/null 2>&1; then
 	if ! groups patch 2>/dev/null | grep -q jack; then
-	        adduser patch jack --quiet
+		adduser patch jack --quiet
 		GROUP_MEMBERSHIP_CHANGED=true
 	fi
 fi
@@ -22,7 +22,13 @@ fi
 adduser root jack --quiet
 
 echo "JACK_PROMISCUOUS_SERVER=jack" >> /etc/environment
-systemctl --system daemon-reload > /dev/null || true
+
+#DEBHELPER#
+
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] ; then
+	systemctl enable jack
+	systemctl start jack
+fi
 
 if $GROUP_MEMBERSHIP_CHANGED; then
 	echo

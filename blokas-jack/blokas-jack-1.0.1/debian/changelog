@@ -1,0 +1,5 @@
+blokas-jack (1.0.1-1) buster; urgency=low
+
+  * Enable and start Jack server after installing.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Mon, 06 Apr 2020 13:20:31 +0100
