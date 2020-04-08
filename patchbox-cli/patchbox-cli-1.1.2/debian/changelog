@@ -1,3 +1,9 @@
+patchbox-cli (1.1.2-2) buster; urgency=low
+
+  * Fixed patchbox-init service.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Wed, 08 Apr 2020 08:33:35 +0100
+
 patchbox-cli (1.1.2-1) buster; urgency=low
 
   * Fixed module menu.
