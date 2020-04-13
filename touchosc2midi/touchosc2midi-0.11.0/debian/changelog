@@ -1,0 +1,13 @@
+touchosc2midi (0.11.0-1~blokas) buster; urgency=low
+
+  * Fixed high CPU usage on idling.
+  * Listen to all network interfaces for initial OSC message.
+  * In case no default gateway is known, try to find a usable IP address anyway.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Fri, 10 Apr 2020 16:08:58 +0100
+
+touchosc2midi (0.10.0-1) buster; urgency=low
+
+  * Initial release.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Mon, 02 Mar 2020 22:41:21 +0000
