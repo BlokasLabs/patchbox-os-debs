@@ -1,3 +1,10 @@
+patchbox-cli (1.1.4-1) buster; urgency=low
+
+  * Pipe through activated module's output to patchbox-init log.
+  * Ensure main modules are restarted if the modules they depend on get started later.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Thu, 04 Jun 2020 12:26:52 +0100
+
 patchbox-cli (1.1.3-1) buster; urgency=low
 
   * Detect module install errors.
