@@ -1,3 +1,16 @@
+patchbox-cli (1.1.6-1) buster; urgency=low
+
+  * Fixed hotstpot name setting.
+  * Automatically start in interactive mode if submenu's required arguments were not provided.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Mon, 14 Sep 2020 10:30:22 +0100
+
+patchbox-cli (1.1.5-1) buster; urgency=low
+
+  * Allow masking services started by patchbox modules, so they don't get started.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Fri, 05 Jun 2020 11:13:59 +0100
+
 patchbox-cli (1.1.4-1) buster; urgency=low
 
   * Pipe through activated module's output to patchbox-init log.
