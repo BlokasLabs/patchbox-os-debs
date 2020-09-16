@@ -1,3 +1,9 @@
+patchbox-cli (1.1.7-1) buster; urgency=low
+
+  * Fixed boot menu.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Wed, 16 Sep 2020 12:01:18 +0100
+
 patchbox-cli (1.1.6-1) buster; urgency=low
 
   * Fixed hotstpot name setting.
