@@ -1,3 +1,9 @@
+patchbox-cli (1.2.0-1) buster; urgency=low
+
+  * Allow Patchbox modules to specify 'is_desktop' attribute in order to be started in user's desktop environment.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Fri, 18 Sep 2020 16:23:15 +0100
+
 patchbox-cli (1.1.7-1) buster; urgency=low
 
   * Fixed boot menu.
