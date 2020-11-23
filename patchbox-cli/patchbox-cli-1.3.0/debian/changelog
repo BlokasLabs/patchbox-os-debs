@@ -1,3 +1,9 @@
+patchbox-cli (1.3.0-1) buster; urgency=low
+
+  * Added kernel submenu for switching between realtime and regular kernels.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Fri, 20 Nov 2020 09:28:47 +0000
+
 patchbox-cli (1.2.0-1) buster; urgency=low
 
   * Allow Patchbox modules to specify 'is_desktop' attribute in order to be started in user's desktop environment.
