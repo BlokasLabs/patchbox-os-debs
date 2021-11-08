@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Check if pisound-btn is diverting, if yes, take over
+HOSTAP_DIV=$(dpkg-divert --listpackage /etc/default/hostapd)
+
+if [ "$HOSTAP_DIV" = "pisound-btn" ]; then
+    echo "Taking over pisound-btn diversion"
+    dpkg-divert --package pisound-btn --remove --rename /etc/default/hostapd
+fi
