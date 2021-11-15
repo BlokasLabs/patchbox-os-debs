@@ -1,0 +1,5 @@
+patchbox-wifi (1.0.0-1) buster; urgency=low
+
+  * Initial release. Forked from pisound-btn
+
+ -- Benjamin Herrenschmidt <benh@kernel.crashing.org>  Fri, 29 Oct 2021 12:19:29 +1100

@@ -1,0 +1,13 @@
+Source: patchbox-wifi
+Section: utils
+Priority: optional
+Maintainer: Blokas <hello@blokas.io>
+Build-Depends: debhelper (>=10~)
+Homepage: https://blokas.io/
+
+Package: patchbox-wifi
+Architecture: all
+Pre-Depends: hostapd (>= 2:2.6), dnsmasq (>= 2.72)
+Description: Patchbox wifi configuration
+Breaks: pisound-btn (<< 1.15)
+Replaces: pisound-btn (<< 1.15)
