@@ -9,5 +9,5 @@ Homepage: https://blokas.io/
 Package: patchbox
 Architecture: any
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}, patchbox-cli (>= 1.1.0-1)
+Depends: ${misc:Depends}, ${shlibs:Depends}, patchbox-cli (>= 1.1.0-1), bluez (>= 5.50-1.2~deb10u1+rpt1), blokas-telemetry (>= 1.0.0-1)
 Description: Patchbox meta package

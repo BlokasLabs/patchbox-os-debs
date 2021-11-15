@@ -6,7 +6,7 @@ cd $DIR
 source ../env.sh
 
 PACKAGE=patchbox
-VERSION=1.1.0
+VERSION=1.1.1
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 

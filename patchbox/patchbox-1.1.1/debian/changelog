@@ -1,0 +1,11 @@
+patchbox (1.1.1-1) buster; urgency=low
+
+  * Added blokas-telemetry dependency.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Mon, 07 Jun 2021 10:06:12 +0100
+
+patchbox (1.1.0-1) buster; urgency=low
+
+  * Initial release.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Wed, 14 Mar 2020 10:05:24 +0000
