@@ -1,0 +1,6 @@
+patchage (1.0.4-1) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ --  <>  Wed, 04 May 2022 11:33:32 +0100

@@ -4,3 +4,6 @@
 [submodule "patchbox-cli/src"]
 	path = patchbox-cli/src
 	url = https://github.com/BlokasLabs/patchbox-cli.git
+[submodule "patchage/src"]
+	path = patchage/src
+	url = https://github.com/blokaslabs/patchage
