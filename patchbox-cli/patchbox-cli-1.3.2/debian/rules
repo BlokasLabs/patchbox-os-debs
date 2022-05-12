@@ -8,7 +8,3 @@
 override_dh_installsystemd:
 	cp $(CURDIR)/patchbox-init.service $(CURDIR)/debian/
 	dh_installsystemd --name=patchbox-init
-
-override_dh_install:
-	dh_install debian/motd /usr/share/patchbox-cli/
-	dh_install

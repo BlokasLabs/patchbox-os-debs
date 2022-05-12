@@ -1,3 +1,10 @@
+patchbox-cli (1.3.2-2) buster; urgency=low
+
+  * Moved /etc/motd to 'patchbox' package.
+  * Added /usr/share/patchbox-cli/version file.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Thu, 12 May 2022 21:22:40 +0100
+
 patchbox-cli (1.3.2-1) buster; urgency=low
 
   * Include the new kernel scripts in the package.

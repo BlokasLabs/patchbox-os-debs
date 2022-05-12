@@ -1,0 +1,2 @@
+motd /usr/share/patchbox
+20-patchbox-motd /etc/update-motd.d
