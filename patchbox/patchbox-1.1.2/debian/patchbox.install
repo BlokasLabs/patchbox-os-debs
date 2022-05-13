@@ -1,2 +1,4 @@
-motd /usr/share/patchbox
-20-patchbox-motd /etc/update-motd.d
+motd-header /usr/share/patchbox
+motd-footer /usr/share/patchbox
+20-patchbox-motd-header /etc/update-motd.d
+29-patchbox-motd-footer /etc/update-motd.d
