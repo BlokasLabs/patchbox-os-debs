@@ -1,10 +1,11 @@
-patchbox-cli (1.3.2-2) buster; urgency=low
+patchbox-cli (1.3.3-1) buster; urgency=low
 
   * Moved /etc/motd to 'patchbox' package.
   * Added /usr/share/patchbox-cli/version file.
   * Added --no-rebase to 'git pull' calls.
+  * Fixed launching of 'is_desktop: true' modules.
 
- -- Giedrius Trainavičius <giedrius@blokas.io>  Thu, 12 May 2022 21:22:40 +0100
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Mon, 16 May 2022 14:23:01 +0100
 
 patchbox-cli (1.3.2-1) buster; urgency=low
 
