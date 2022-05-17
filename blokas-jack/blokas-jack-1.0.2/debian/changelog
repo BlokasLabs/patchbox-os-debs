@@ -1,0 +1,11 @@
+blokas-jack (1.0.2-1) buster; urgency=low
+
+  * Autorestart the Jack server in case of failure.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Tue, 17 May 2022 14:20:51 +0100
+
+blokas-jack (1.0.1-1) buster; urgency=low
+
+  * Enable and start Jack server after installing.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Mon, 06 Apr 2020 13:20:31 +0100
