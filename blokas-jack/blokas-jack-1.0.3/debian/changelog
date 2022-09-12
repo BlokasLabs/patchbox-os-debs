@@ -1,3 +1,9 @@
+blokas-jack (1.0.3-1) buster; urgency=low
+
+  * Restart the jack.service when /usr/bin/jackd is modified by dpkg, like during upgrades.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Mon, 12 Sep 2022 23:47:37 +0300
+
 blokas-jack (1.0.2-1) buster; urgency=low
 
   * Autorestart the Jack server in case of failure.

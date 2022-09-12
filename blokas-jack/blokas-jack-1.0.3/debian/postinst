@@ -1,3 +1,10 @@
+if [ "$1" = "triggered" ]; then
+	if systemctl -q is-active jack.service; then
+		systemctl restart jack.service
+	fi
+	exit 0
+fi
+
 if ! id -u jack > /dev/null 2>&1; then
 	adduser --no-create-home --system --group jack
 	adduser jack audio --quiet
@@ -24,11 +31,6 @@ adduser root jack --quiet
 echo "JACK_PROMISCUOUS_SERVER=jack" >> /etc/environment
 
 #DEBHELPER#
-
-if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] ; then
-	systemctl enable jack
-	systemctl start jack
-fi
 
 if $GROUP_MEMBERSHIP_CHANGED; then
 	echo
