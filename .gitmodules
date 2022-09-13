@@ -7,3 +7,6 @@
 [submodule "patchage/src"]
 	path = patchage/src
 	url = https://github.com/blokaslabs/patchage
+[submodule "python3-unicategories/unicategories"]
+	path = python3-unicategories/src
+	url = https://gitlab.com/ergoithz/unicategories
