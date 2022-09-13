@@ -7,3 +7,7 @@
 
 %:
 	dh $@
+
+override_dh_installsystemd:
+	dh_installsystemd --name=wifi-hotspot-autodisable wifi-hotspot-autodisable.service
+	dh_installsystemd --no-stop-on-upgrade --name=wifi-hotspot wifi-hotspot.service

@@ -19,8 +19,25 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 
+if [ -e /tmp/wifi-hotspot-disable ]; then
+    echo "Not starting WiFi hotspot as /boot/wpa_supplicant.conf existed during boot."
+    rm /tmp/wifi-hotspot-disable
+    exit 0
+fi
+
 rfkill unblock wifi
-wpa_cli -i wlan0 disconnect
+n=0
+until [ "$n" -ge 5 ]
+do
+    wpa_cli -i wlan0 disconnect && break  # substitute your command here
+    echo Retrying...
+    n=$((n+1))
+    sleep 1
+done
+if [ "$n" -ge 5 ]; then
+    echo \'wpa_cli -i wlan0 disconnect\' command failed!
+    exit 1
+fi
 dhcpcd --denyinterfaces wlan0
 ifconfig wlan0 down
 ifconfig wlan0 172.24.1.1 netmask 255.255.255.0 broadcast 172.24.1.255

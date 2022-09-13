@@ -1,6 +1,6 @@
 [Unit]
 Description=WiFi Hotspot
-After=network.target
+After=network.target wpa_supplicant.service
 
 [Service]
 RemainAfterExit=yes

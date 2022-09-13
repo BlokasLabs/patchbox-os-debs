@@ -1,0 +1,12 @@
+[Unit]
+Description=Autodisable wifi-hotspot.service on /boot/wpa_supplicant.conf existence.
+ConditionPathExists=/boot/wpa_supplicant.conf
+Before=raspberrypi-net-mods.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/touch /tmp/wifi-hotspot-disable
+ExecStart=/bin/systemctl disable wifi-hotspot.service
+
+[Install]
+WantedBy=multi-user.target

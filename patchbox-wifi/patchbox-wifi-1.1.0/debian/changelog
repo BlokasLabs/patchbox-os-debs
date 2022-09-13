@@ -1,0 +1,12 @@
+patchbox-wifi (1.1.0-1) bullseye; urgency=low
+
+  * Added monitoring of /boot/wpa_supplicant.conf to autodisable the WiFi hotspot
+    if WiFi was configured in the sd card.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Tue, 13 Sep 2022 11:09:49 +0300
+
+patchbox-wifi (1.0.0-1) buster; urgency=low
+
+  * Initial release. Forked from pisound-btn
+
+ -- Benjamin Herrenschmidt <benh@kernel.crashing.org>  Fri, 29 Oct 2021 12:19:29 +1100

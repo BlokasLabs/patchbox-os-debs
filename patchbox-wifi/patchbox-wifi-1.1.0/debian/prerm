@@ -5,3 +5,5 @@ if [ "$1" = "remove" ] ; then
     [ -L ${cf} ] && rm ${cf}
     dpkg-divert --remove --package patchbox-wifi --rename --divert ${cf}.distrib ${cf}
 fi
+
+#DEBHELPER#
