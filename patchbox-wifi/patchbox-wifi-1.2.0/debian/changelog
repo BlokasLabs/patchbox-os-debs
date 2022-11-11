@@ -1,3 +1,9 @@
+patchbox-wifi (1.2.0-1) bullseye; urgency=low
+
+  * Don't start & enable the wifi-hotspot.service on install, please enable it manually.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Fri, 11 Nov 2022 09:37:39 +0000
+
 patchbox-wifi (1.1.0-1) bullseye; urgency=low
 
   * Added monitoring of /boot/wpa_supplicant.conf to autodisable the WiFi hotspot
