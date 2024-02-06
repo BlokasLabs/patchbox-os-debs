@@ -1,0 +1,11 @@
+Source: patchbox-wifi
+Section: utils
+Priority: optional
+Maintainer: Blokas <hello@blokas.io>
+Build-Depends: debhelper (>=11)
+Homepage: https://blokas.io/
+
+Package: patchbox-wifi
+Architecture: all
+Pre-Depends: network-manager (>= 1.42.4-1)
+Description: WiFi hotspot configuration

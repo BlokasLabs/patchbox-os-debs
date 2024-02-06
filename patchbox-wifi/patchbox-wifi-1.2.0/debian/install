@@ -1,5 +1,0 @@
-etc/default/hostapd.patchbox
-etc/dnsmasq.d/wifi-hotspot.conf
-etc/hostapd/hostapd.conf
-usr/lib/patchbox-wifi/enable_wifi_hotspot.sh
-usr/lib/patchbox-wifi/disable_wifi_hotspot.sh

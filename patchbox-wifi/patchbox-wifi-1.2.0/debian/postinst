@@ -1,9 +1,0 @@
-#!/bin/sh
-
-if [ "$1" = "configure" ]; then
-    cf="/etc/default/hostapd"
-    dpkg-divert --add --package patchbox-wifi --rename --divert ${cf}.distrib ${cf}
-    [ \! -e ${cf} -o -L ${cf} ] && ln -sf ${cf}.patchbox ${cf}
-fi
-
-#DEBHELPER#

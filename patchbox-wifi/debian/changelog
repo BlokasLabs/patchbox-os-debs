@@ -1,3 +1,10 @@
+patchbox-wifi (1.3.0-1) bookworm; urgency=low
+
+  * Reworked the package to use Network Manager.
+  * Added change_wifi_hotspot_password.sh script to help change the shared password.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Tue, 06 Feb 2024 11:29:02 +0200
+
 patchbox-wifi (1.2.0-1) bullseye; urgency=low
 
   * Don't start & enable the wifi-hotspot.service on install, please enable it manually.

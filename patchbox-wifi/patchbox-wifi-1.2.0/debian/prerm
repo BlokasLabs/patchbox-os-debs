@@ -1,9 +1,0 @@
-#!/bin/sh
-
-if [ "$1" = "remove" ] ; then
-    cf="/etc/default/hostapd"
-    [ -L ${cf} ] && rm ${cf}
-    dpkg-divert --remove --package patchbox-wifi --rename --divert ${cf}.distrib ${cf}
-fi
-
-#DEBHELPER#

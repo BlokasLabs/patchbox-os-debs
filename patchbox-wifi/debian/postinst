@@ -1,0 +1,16 @@
+#!/bin/sh
+
+echo ""
+echo "Creating the Hotspot Network with ssid '$(hostname)'... WiFi connection may be interrupted. Will use IP 172.24.1.1 while the hotspot is enabled."
+echo "Once done, use the command \`sudo systemctl enable --now wifi-hotspot\` to turn it on. Use 'disable' in place of 'enable' to turn it off."
+echo ""
+echo "The default password is 'blokaslabs'. Run \`change_wifi_hotspot_password.sh\` to change it."
+
+nmcli device wifi hotspot con-name pb-hotspot ssid "$(hostname)" password "blokaslabs" ifname wlan0 > /dev/null 2>/dev/null
+nmcli connection down pb-hotspot > /dev/null 2>&1 || true
+nmcli connection modify pb-hotspot ipv4.addresses 172.24.1.1/24
+nmcli connection modify pb-hotspot autoconnect false
+nmcli connection modify pb-hotspot connection.autoconnect-priority 999
+nmcli connection modify pb-hotspot wifi-sec.wps-method disabled
+
+#DEBHELPER#
