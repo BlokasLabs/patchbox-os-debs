@@ -1,0 +1,12 @@
+patchage (1.0.11-1) UNRELEASED; urgency=low
+
+  * Updated to Patchage 1.0.11, revision c94e92befcc94fca6d0639c2fd562762d152d46f.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Tue, 13 Feb 2024 00:16:20 +0200
+
+patchage (1.0.4-1) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ --  <>  Wed, 04 May 2022 11:33:32 +0100

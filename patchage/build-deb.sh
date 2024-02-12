@@ -5,7 +5,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=patchage
-VERSION=1.0.4
+VERSION=1.0.11
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 

@@ -1,0 +1,13 @@
+Source: patchage
+Section: audio
+Priority: optional
+Maintainer: Blokas Labas <hello@blokas.io>
+Build-Depends: debhelper-compat (= 12), libdbus-glib-1-dev, libjack-jackd2-dev, libganv-dev, libgtkmm-2.4-dev, libglibmm-2.4-dev, libglib2.0-dev, meson
+Standards-Version: 4.5.0
+Homepage: https://drobilla.net/software/patchage.html
+
+Package: patchage
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Debian package for Patchage.
