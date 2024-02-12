@@ -1,3 +1,9 @@
+patchbox (1.1.2-2) UNRELEASED; urgency=low
+
+  * Changed Architecture to 'all'.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Mon, 12 Feb 2024 23:50:35 +0200
+
 patchbox (1.1.2-1) buster; urgency=low
 
   * Moved Patchbox OS motd to this package from patchbox-cli.
