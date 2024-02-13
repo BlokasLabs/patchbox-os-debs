@@ -5,7 +5,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=python3-unicategories
-VERSION=0.1.1
+VERSION=0.1.2
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
