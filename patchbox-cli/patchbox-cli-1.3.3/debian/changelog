@@ -1,3 +1,9 @@
+patchbox-cli (1.3.3-2) bookworm; urgency=low
+
+  * Rebuilt for bookworm.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Thu, 15 Feb 2024 17:46:30 +0200
+
 patchbox-cli (1.3.3-1) buster; urgency=low
 
   * Moved /etc/motd to 'patchbox' package.
