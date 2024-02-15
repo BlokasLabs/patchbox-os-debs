@@ -1,3 +1,9 @@
+touchosc2midi (0.11.0-2~blokas) bookworm; urgency=low
+
+  * Rebuilt for bookworm.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Thu, 15 Feb 2024 17:50:02 +0200
+
 touchosc2midi (0.11.0-1~blokas) buster; urgency=low
 
   * Fixed high CPU usage on idling.
