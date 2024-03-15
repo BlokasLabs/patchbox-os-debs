@@ -7,5 +7,6 @@ Homepage: https://blokas.io/
 
 Package: patchbox-wifi
 Architecture: all
+Depends: uuid (>= 1.6.2-1)
 Pre-Depends: network-manager (>= 1.42.4-1)
 Description: WiFi hotspot configuration

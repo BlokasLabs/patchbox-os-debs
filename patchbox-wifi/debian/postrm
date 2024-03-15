@@ -2,6 +2,6 @@
 
 echo "Deleting pb-hotspot Network..."
 nmcli connection down pb-hotspot > /dev/null 2>&1
-nmcli connection delete pb-hotspot
+nmcli connection delete pb-hotspot > /dev/null 2>&1
 
 #DEBHELPER#

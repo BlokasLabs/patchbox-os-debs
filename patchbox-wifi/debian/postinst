@@ -1,16 +1,56 @@
 #!/bin/sh
 
+if [ ! -z "$TARGET_HOSTNAME" ]; then
+	SSID="$TARGET_HOSTNAME"
+else
+	SSID=$(hostname)
+fi
+
 echo ""
-echo "Creating the Hotspot Network with ssid '$(hostname)'... WiFi connection may be interrupted. Will use IP 172.24.1.1 while the hotspot is enabled."
+echo "Creating the Hotspot Network with SSID '${SSID}'..."
 echo "Once done, use the command \`sudo systemctl enable --now wifi-hotspot\` to turn it on. Use 'disable' in place of 'enable' to turn it off."
 echo ""
-echo "The default password is 'blokaslabs'. Run \`change_wifi_hotspot_password.sh\` to change it."
+echo "The default password is 'blokaslabs'. Run \`sudo change_wifi_hotspot_password.sh\` to change it."
+echo ""
+echo "While the Hotspot is enabled, will use IP 172.24.1.1"
+echo ""
 
-nmcli device wifi hotspot con-name pb-hotspot ssid "$(hostname)" password "blokaslabs" ifname wlan0 > /dev/null 2>/dev/null
-nmcli connection down pb-hotspot > /dev/null 2>&1 || true
-nmcli connection modify pb-hotspot ipv4.addresses 172.24.1.1/24
-nmcli connection modify pb-hotspot autoconnect false
-nmcli connection modify pb-hotspot connection.autoconnect-priority 999
-nmcli connection modify pb-hotspot wifi-sec.wps-method disabled
+CONNFILE=/etc/NetworkManager/system-connections/pb-hotspot.nmconnection
+UUID=$(uuid -v4)
+cat <<- EOF >${CONNFILE}
+[connection]
+id=pb-hotspot
+uuid=${UUID}
+type=wifi
+autoconnect=false
+autoconnect-priority=999
+interface-name=wlan0
+
+[wifi]
+mode=ap
+ssid=${SSID}
+
+[wifi-security]
+group=ccmp;
+key-mgmt=wpa-psk
+pairwise=ccmp;
+proto=rsn;
+psk=blokaslabs
+wps-method=1
+
+[ipv4]
+address1=172.24.1.1/24
+method=shared
+
+[ipv6]
+addr-gen-mode=default
+method=ignore
+
+[proxy]
+EOF
+
+chmod 600 ${CONNFILE}
+
+nmcli connection reload
 
 #DEBHELPER#
