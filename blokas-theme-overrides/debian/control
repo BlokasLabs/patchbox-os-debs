@@ -1,0 +1,14 @@
+Source: blokas-theme-overrides
+Section: unknown
+Priority: optional
+Maintainer: Blokas <hello@blokas.io>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: https://blokas.io
+Rules-Requires-Root: no
+
+Package: blokas-theme-overrides
+Architecture: all
+Multi-Arch: foreign
+Depends: pixflat-theme (>= 0.14), ${misc:Depends}
+Description: Blokas theme override for Raspberry Pi OS.

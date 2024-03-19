@@ -1,0 +1,8 @@
+#!/bin/sh
+
+dpkg-divert --package blokas-theme-overrides --rename --add /usr/share/icons/PiXflat/16x16/places/start-here.png
+dpkg-divert --package blokas-theme-overrides --rename --add /usr/share/icons/PiXflat/24x24/places/start-here.png
+dpkg-divert --package blokas-theme-overrides --rename --add /usr/share/icons/PiXflat/32x32/places/start-here.png
+dpkg-divert --package blokas-theme-overrides --rename --add /usr/share/icons/PiXflat/48x48/places/start-here.png
+
+#DEBHELPER#
