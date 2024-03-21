@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_installsystemd:
+	dh_installsystemd --name=patchbox-rpi-compat-early --no-enable --no-start patchbox-rpi-compat-early.service
+	dh_installsystemd --name=patchbox-rpi-compat-graphical --no-enable --no-start patchbox-rpi-compat-graphical.service
+	dh_installsystemd --name=patchbox-vnc-wayland --no-enable --no-start patchbox-vnc-wayland.path
+	dh_installsystemd --name=patchbox-vnc-x11 --no-enable --no-start patchbox-vnc-x11.path
+	dh_installsystemd --name=patchbox-vnc patchbox-vnc.target

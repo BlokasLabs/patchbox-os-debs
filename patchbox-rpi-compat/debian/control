@@ -1,0 +1,14 @@
+Source: patchbox-rpi-compat
+Section: utils
+Priority: optional
+Maintainer: Blokas <hello@blokas.io>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: https://blokas.io/
+Rules-Requires-Root: no
+
+Package: patchbox-rpi-compat
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, raspi-config (>= 20240313)
+Description: Smooths out the gaps of moving the same SD card to different Pi versions.

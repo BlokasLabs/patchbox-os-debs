@@ -1,0 +1,10 @@
+[Unit]
+Description=Patchbox OS conditional paths service for compatibility between Pi models.
+After=graphical.target
+
+[Service]
+ExecStart=/usr/lib/patchbox-rpi-compat/compat-graphical.sh
+Type=oneshot
+
+[Install]
+WantedBy=graphical.target

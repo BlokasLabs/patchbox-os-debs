@@ -1,0 +1,7 @@
+[Unit]
+Description=Patchbox OS VNC target.
+After=network.target
+Wants=patchbox-rpi-compat-early.service patchbox-rpi-compat-graphical.service patchbox-vnc-wayland.path patchbox-vnc-x11.path
+
+[Install]
+WantedBy=multi-user.target

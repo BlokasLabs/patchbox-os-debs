@@ -1,0 +1,10 @@
+[Unit]
+Description=Patchbox OS VNC X11 path monitor
+PartOf=patchbox-vnc.target
+
+[Path]
+PathExists=/run/patchbox-os-compat/x11
+Unit=vncserver-x11-serviced.service
+
+[Install]
+WantedBy=multi-user.target

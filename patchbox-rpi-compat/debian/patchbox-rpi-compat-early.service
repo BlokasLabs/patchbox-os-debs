@@ -1,0 +1,10 @@
+[Unit]
+Description=Patchbox OS conditional paths service for compatibility between Pi models.
+DefaultDependencies=no
+
+[Service]
+ExecStart=/usr/lib/patchbox-rpi-compat/compat-early.sh
+Type=oneshot
+
+[Install]
+WantedBy=sysinit.target

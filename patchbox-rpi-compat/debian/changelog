@@ -1,0 +1,5 @@
+patchbox-rpi-compat (1.0.0-1) UNRELEASED; urgency=low
+
+  * Initial release.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Thu, 21 Mar 2024 12:46:45 +0000

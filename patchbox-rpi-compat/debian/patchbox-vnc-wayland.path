@@ -1,0 +1,10 @@
+[Unit]
+Description=Patchbox OS VNC Wayland path monitor
+PartOf=patchbox-vnc.target
+
+[Path]
+PathExists=/run/patchbox-os-compat/wayland
+Unit=wayvnc.service
+
+[Install]
+WantedBy=multi-user.target
