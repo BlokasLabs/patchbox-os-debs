@@ -1,3 +1,9 @@
+patchbox-rpi-compat (1.0.0-2) UNRELEASED; urgency=low
+
+  * Added Requisite=graphical.target for patchbox-rpi-compat-graphical.service
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Fri, 29 Mar 2024 14:53:11 +0000
+
 patchbox-rpi-compat (1.0.0-1) UNRELEASED; urgency=low
 
   * Initial release.

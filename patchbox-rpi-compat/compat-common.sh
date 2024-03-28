@@ -4,7 +4,7 @@
 exit() { return 0; }
 
 # Import functions like `is_wayland`.
-source /usr/bin/raspi-config nonint 2>&1 > /dev/null
+source /usr/bin/raspi-config nonint &> /dev/null
 
 # Restore `exit``.
 unset -f exit
