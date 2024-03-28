@@ -23,5 +23,5 @@ if [ "$(systemctl is-system-running || true)" = "stopping" ]; then
 	exit 0
 fi
 
-nmcli connection modify pb-hotspot autoconnect false
-nmcli connection down pb-hotspot
+nmcli connection modify pb-hotspot autoconnect false || true
+nmcli connection down pb-hotspot || true

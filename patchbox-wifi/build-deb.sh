@@ -1,2 +1,2 @@
 #!/bin/sh
-exec dpkg-buildpackage -b
+exec dpkg-buildpackage -b $@
