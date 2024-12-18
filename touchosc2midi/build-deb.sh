@@ -5,7 +5,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=touchosc2midi
-VERSION=0.11.0
+VERSION=0.12.0
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
