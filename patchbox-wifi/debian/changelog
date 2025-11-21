@@ -1,3 +1,9 @@
+patchbox-wifi (1.3.1-3) trixie; urgency=low
+
+  * Trixie edition rebuild.
+
+ -- Giedrius Trainavičius <giedrius@blokas.io>  Thu, 20 Nov 2025 23:18:19 +0200
+
 patchbox-wifi (1.3.1-2) bookworm; urgency=low
 
   * Assume success on disabling.
